@@ -1,5 +1,5 @@
 import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
-import React from 'react'
+import React,{Component} from 'react'
 
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -25,7 +25,7 @@ import Register from "./pages/Register"
 import "./pages/style/rentcar.css"
 
 
-function App() {
+export default class App extends Component {
   return (
     <Router>
     <header className="App-header">
@@ -90,7 +90,7 @@ function App() {
   <Route exact path="/Login" element={<Login/>}></Route>
   <Route exact path="/Register" element={<Register/>}></Route>
 
-   {/*replace={true} will replace the component data*/}
+
   
   </Routes>
            
@@ -102,4 +102,3 @@ function App() {
 
 
 
-export default App;
