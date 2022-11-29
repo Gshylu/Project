@@ -26,7 +26,8 @@ import "./pages/style/rentcar.css"
 
 
 export default class App extends Component {
-  return (
+  render(){
+    return (
     <Router>
     <header className="App-header">
           <Navbar style={{backgroundColor:"#00008b"}}>
@@ -98,6 +99,7 @@ export default class App extends Component {
   </Router>
 
   );
+}
 }
 
 
